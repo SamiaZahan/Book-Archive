@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9cf5a85bec.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #spinner{
+            display: none;
+        }
+        body{
+            background-color:rgb(6, 48, 63);        
+        }
+    
+    </style>
+</head>
+<body class="container py-5 text-white">
+       <!-- sesrch Book -->
+       <h2 class='text-center'>Search For Any Book</h2>
+       <div class="input-group mb-3 py-3 w-75 mx-auto">
+           <input id="search-field" type="text" class="form-control py-3 fs-5" placeholder="Search Book" aria-label="Recipient's username" aria-describedby="button-addon2">
+           <button onclick="searchBook()" class=" fs-5 btn btn-outline-secondary bg-info bg-gradient w-25" type="button" id="button-addon2">Search</button>
+       </div>
+
+       <!-- spinner -->
+       <div id="spinner" class="text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <h5>Loading...</h5>
+      </div>
+
+       <!-- search result -->
+       <div id="result-number">
+
+       </div>
+        <div id= "search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+
+       <script src="app.js"></script>
+</body>
+</html>
